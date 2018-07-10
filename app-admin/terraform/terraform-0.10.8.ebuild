@@ -34,7 +34,7 @@ src_compile() {
 }
 
 src_install() {
-	cp "${S}/bin/${PN}" "${D}/usr/bin/${PN}-${SLOT}"
+	cp "${S}/src/${EGO_PN}/bin/${PN}" "${D}/usr/bin/${PN}-${SLOT}" || die
 }
 
 eselect_terraform_update() {
