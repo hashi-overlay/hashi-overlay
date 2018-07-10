@@ -3,7 +3,6 @@
         <name>hashi-overlay</name>
         <description lang="en">slotted ebuilds for hashicorp tools</description>
         <homepage>https://github.com/hashi-overlay/hashi-overlay</homepage>
-        hashi-overlay/hashi-overlay
 
         <owner type="person">
             <email>tim.messier@gmail.com</email>
