@@ -3,11 +3,13 @@
         <name>hashi-overlay</name>
         <description lang="en">slotted ebuilds for hashicorp tools</description>
         <homepage>https://github.com/hashi-overlay/hashi-overlay</homepage>
+        hashi-overlay/hashi-overlay
+
         <owner type="person">
             <email>tim.messier@gmail.com</email>
             <name>Tim Messier</name>
         </owner>
-        <source type="git">git://github.com/hashi-overaly/hashi-overlay.git</source>
+        <source type="git">git://github.com/hashi-overlay/hashi-overlay.git</source>
         <feed>
             https://github.com/hashi-overlay/hashi-overlay/commits/master.atom
         </feed>
