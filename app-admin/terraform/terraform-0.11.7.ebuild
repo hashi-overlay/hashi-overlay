@@ -26,6 +26,10 @@ src_prepare() {
 
 	sed -e 's/dev: fmtcheck generate/dev:/' \
 		-i "${S}/src/${EGO_PN}/Makefile" || die
+
+	sed -e 's:^\(GIT_COMMIT=\).*:\1:' \
+		-e 's:^\(GIT_DIRTY=\).*:\1:' \
+		-i "${S}/src/${EGO_PN}/src/build.sh" || die
 }
 
 src_compile() {
