@@ -24,7 +24,7 @@ PDEPEND="app-eselect/eselect-terraform"
 src_prepare() {
 	default
 
-	sed -e 's:fmtcheck generate:generate:' \
+	sed -e 's/dev: fmtcheck generate/dev:/' \
 		-i "${S}/src/${EGO_PN}/Makefile" || die
 }
 
