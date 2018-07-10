@@ -21,6 +21,13 @@ DEPEND="dev-go/gox
 RDEPEND="${DEPEND}"
 PDEPEND="app-eselect/eselect-terraform"
 
+src_prepare() {
+	default
+
+	sed -e 's:fmtcheck generate:generate:' \
+		-i "${S}/src/${EGO_PN}/Makefile" || die
+}
+
 src_compile() {
 	GOPATH="${S}" GOBIN="${S}/bin" \
 		emake -C "${S}/src/${EGO_PN}" dev
