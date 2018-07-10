@@ -9,7 +9,7 @@ SRC_URI="https://github.com/hashi-overlay/${PN}/archive/v${PV}.tar.gz -> ${P}.ta
 
 LICENSE="MIT"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS=""
 IUSE=""
 
 RDEPEND=">=app-admin/eselect-1.4"
