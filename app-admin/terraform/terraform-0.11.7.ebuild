@@ -12,7 +12,7 @@ EGO_PN="github.com/hashicorp/terraform"
 
 LICENSE="MPL-2.0"
 SLOT="0.11"
-KEYWORDS=""
+KEYWORDS="amd64"
 IUSE=""
 
 DEPEND="dev-go/gox
