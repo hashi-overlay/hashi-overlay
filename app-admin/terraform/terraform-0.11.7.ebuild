@@ -29,7 +29,7 @@ src_prepare() {
 
 	sed -e 's:^\(GIT_COMMIT=\).*:\1:' \
 		-e 's:^\(GIT_DIRTY=\).*:\1:' \
-		-i "${S}/src/${EGO_PN}/src/build.sh" || die
+		-i "${S}/src/${EGO_PN}/scripts/build.sh" || die
 }
 
 src_compile() {
