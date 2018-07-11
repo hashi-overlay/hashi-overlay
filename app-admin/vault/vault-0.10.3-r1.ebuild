@@ -66,6 +66,7 @@ src_install() {
 	keepdir /var/log/${PN}
 	fowners ${PN}:${PN} /var/log/${PN}
 
+	dodir /usr/bin
 	cp "${S}/src/${EGO_PN}/bin/${PN}" "${D}/usr/bin/${PN}-${SLOT}" || die
 }
 
