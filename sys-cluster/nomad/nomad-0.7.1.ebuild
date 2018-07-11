@@ -26,7 +26,7 @@ src_prepare() {
 
 	sed -e 's/^\(GIT_COMMIT :=\).*/\1/' \
 		-e 's/^\(GIT_DIRTY :=\).*/\1/' \
-		-i "${S}/src/${EGO_PN}/GNUMakefile" || die
+		-i "${S}/src/${EGO_PN}/GNUmakefile" || die
 }
 
 src_compile() {
