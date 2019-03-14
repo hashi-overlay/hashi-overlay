@@ -33,7 +33,7 @@ src_prepare() {
 }
 
 src_compile() {
-	GOPATH="${S}" GOBIN="${S}/bin" \
+	GOPATH="${S}" GOBIN="${S}/bin" GO111MODULE=on \
 		emake -C "${S}/src/${EGO_PN}" dev
 }
 
